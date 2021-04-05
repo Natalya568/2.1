@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.5.1.js"></script>
+        <script>
+
+            function asd(){
+             $("p").hide();
+            };
+
+           function asia(){
+            if ($("#btn1").is(':checked')) {   
+                $(".asia").show();
+            } 
+            else {
+                $(".asia").hide();
+            }};
+
+            function europe(){
+            if ($("#btn2").is(':checked')) {   
+                $(".europe").show();
+            } 
+            else {
+                $(".europe").hide();
+            }};
+
+            function usa(){
+            if ($("#btn3").is(':checked')) {   
+                $(".usa").show();
+            } 
+            else {
+                $(".usa").hide();
+            }};
+
+            function africa(){
+            if ($("#btn4").is(':checked')) {   
+                $(".africa").show();
+            } 
+            else {
+                $(".africa").hide();
+            }};
+            
+        </script>
+    </head>
+    <body onload="asd()">
+
+	<br>
+	<div id="txt">
+	<strong>Показать страны:</strong>
+    	</div>
+	<br>
+	<input type="checkbox" id="btn1" onchange="asia()"/>Азии<br>
+        <input type="checkbox" id="btn2" onchange='europe();'/>Европы<br>
+        <input type="checkbox" id="btn3" onchange="usa()"/>Америки<br>
+        <input type="checkbox" id="btn4" onchange="africa()"/>Африки<br>
+        
+        <p class="asia">Монголия</p>
+    	<p class="asia">Китай</p>
+  	<p class="asia">Таиланд</p>
+ 	<p class="asia">Вьетнам</p>
+	<p class="asia">Япония</p>
+ 	<p class="asia">Непал</p>
+
+        <p class="europe">Германия</p>
+        <p class="europe">Польша</p>
+        <p class="europe">Сербия</p>
+        <p class="europe">Украина</p>
+        <p class="europe">Франция</p>
+	<p class="europe">Швеция</p>
+      
+        <p class="usa">США</p>
+ 	<p class="usa">Канада</p>
+     	<p class="usa">Гаити</p>
+  	<p class="usa">Чили</p>
+	<p class="usa">Бразилия</p>
+	<p class="usa">Аргентина</p>
+
+        <p class="africa">Египет</p>
+        <p class="africa">Мадагаскар</p>
+        <p class="africa">Тунис</p>
+        <p class="africa">Кения</p>
+ 	<p class="africa">Алжир</p>
+	<p class="africa">Гвинея</p>
+
+    </body>
+</html>
